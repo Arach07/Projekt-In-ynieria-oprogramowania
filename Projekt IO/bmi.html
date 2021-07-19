@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/dbam-o-zdrowie.png">
+    <title>BMI Calculator</title>
+</head>
+
+
+<body class="bmi-body">
+    <div class="bmi-call">
+        <h1>BMI Kalkulator</h1>
+        <p class="text">Wzrost:</p>
+        <input type="text" placeholder="cm" id="h">
+        <p class="text">Waga:</p>
+        <input type="text" placeholder="kg" id="w">
+        <p id="result"></p>
+        <button id="btn0" onClick="BMI()">Policz</button>
+    </div>
+
+    <div class="table">
+        <table>
+        <h1>PRZEDZIAŁY:</h1>
+        <tr>
+            <th>Niedowaga</th>
+            <th>Prawidłowa</th>
+            <th>Nadwaga</th>
+            <th>Otyłość</th>
+        </tr>
+        <tr>
+            <td>0-18.5</td>
+            <td>18.5-25</td>
+            <td>25-30</td>
+            <td>30+</td>
+        </tr>
+    </table>
+    </div>
+
+<a href="/index.html" class ="press-back">Powrót</a>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

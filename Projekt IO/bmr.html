@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/dbam-o-zdrowie.png">
+    <title>BMR Calculator</title>
+</head>
+
+<body class="bmr-body">
+
+    <div class="bmr-call">
+        <h1>BMR Kalkulator</h1>
+        <select type="option" class="gender" id="g" required>
+            <option value="male" id="m">Mężczyzna</option>
+            <option value="female" id="f">Kobieta</option>
+        </select>
+        <p></p>
+        <p class="text2">Wiek:</p>
+        <input type="number" placeholder="lata" pattern="[15-80]" class="age" id="age" min="1" max="99" required>
+        <p class="text2">Wzrost:</p>
+        <input type="text" placeholder="cm" pattern="[120-250]" id="wzrost" required>
+        <p class="text2">Waga:</p>
+        <input type="text" placeholder="kg" pattern="[30-150]" id="waga" required>
+        <p id="result2"></p>
+        <button id="btn2" onClick="BMR()">Policz</button>
+    </div>
+
+<a href="/index.html" class ="press-back">Powrót</a>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
